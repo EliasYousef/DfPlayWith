@@ -1,0 +1,39 @@
+{
+	"_id": "5425100c2ff9c16c1e2cfad1",
+	"application": "CustomerApp",
+	"layout": {
+		"fixedlayout": "no",
+		"widgetspacing": "yes",
+		"width": "100%",
+		"backgroundcolor": "white",
+		"rows": [
+			{
+				"columns": [
+					{
+						"width": "12",
+						"widgets": [
+							{
+								"name": "WsignUp",
+								"id": "85483"
+							}
+						]
+					}
+				],
+				"id": ""
+			}
+		]
+	},
+	"name": "SignUp",
+	"ownerId": "",
+	"parentname": null,
+	"requestDate": "2014-09-26T07:05:23.226Z",
+	"title": "SignUp",
+	"visibility": "invisible",
+	"versioning": {
+		"DfPlayWith": {
+			"last_action": "1413394536",
+			"status": "committed",
+			"user": "admin"
+		}
+	}
+}

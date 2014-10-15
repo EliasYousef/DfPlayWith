@@ -1,0 +1,53 @@
+{
+	"_id": "54250e592ff9c16c1e2cfacc",
+	"application": "CustomerApp",
+	"layout": {
+		"fixedlayout": "no",
+		"widgetspacing": "yes",
+		"width": "100%",
+		"backgroundcolor": "white",
+		"rows": [
+			{
+				"columns": [
+					{
+						"width": "12",
+						"widgets": [
+							{
+								"name": "wCustomerPage",
+								"id": "82822"
+							}
+						]
+					}
+				],
+				"id": ""
+			},
+			{
+				"columns": [
+					{
+						"width": "12",
+						"widgets": [
+							{
+								"name": "wExample7Widget3",
+								"id": "18755"
+							}
+						]
+					}
+				],
+				"id": ""
+			}
+		]
+	},
+	"name": "MyAccount",
+	"ownerId": "",
+	"parentname": null,
+	"requestDate": "2014-09-26T12:46:37.026Z",
+	"title": "MyAccount",
+	"visibility": "visible",
+	"versioning": {
+		"DfPlayWith": {
+			"last_action": "1413394536",
+			"status": "committed",
+			"user": "admin"
+		}
+	}
+}

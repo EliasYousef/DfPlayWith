@@ -1,0 +1,39 @@
+{
+	"_id": "5436d6609839fe74190e67f5",
+	"app_menu_title": "",
+	"application": "CustomerApp",
+	"layout": {
+		"fixedlayout": "no",
+		"widgetspacing": "yes",
+		"width": "100%",
+		"backgroundcolor": "white",
+		"rows": [
+			{
+				"columns": [
+					{
+						"width": "12",
+						"widgets": [
+							{
+								"name": "wCreateNewOrder"
+							}
+						]
+					}
+				],
+				"id": ""
+			}
+		]
+	},
+	"name": "NewOrder",
+	"ownerId": "",
+	"parentname": null,
+	"requestDate": "2014-10-09T18:40:08.695Z",
+	"title": "NewOrder",
+	"visibility": "visible",
+	"versioning": {
+		"DfPlayWith": {
+			"last_action": "1413394536",
+			"status": "committed",
+			"user": "admin"
+		}
+	}
+}

@@ -1,0 +1,39 @@
+{
+	"_id": "5422fe4a2ff9c16c1e2cfaa4",
+	"application": "CustomerApp",
+	"layout": {
+		"fixedlayout": "no",
+		"widgetspacing": "yes",
+		"width": "100%",
+		"backgroundcolor": "white",
+		"rows": [
+			{
+				"columns": [
+					{
+						"width": "12",
+						"widgets": [
+							{
+								"name": "wLogin1",
+								"id": "11331"
+							}
+						]
+					}
+				],
+				"id": ""
+			}
+		]
+	},
+	"name": "Home",
+	"ownerId": "",
+	"parentname": null,
+	"requestDate": "2014-09-26T09:31:06.029Z",
+	"title": "Home",
+	"visibility": "invisible",
+	"versioning": {
+		"DfPlayWith": {
+			"last_action": "1413394536",
+			"status": "committed",
+			"user": "admin"
+		}
+	}
+}
