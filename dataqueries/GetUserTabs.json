@@ -1,27 +1,14 @@
 {
-	"selector": ":root",
-	"update_comment": "",
-	"ownerId": "",
-	"persistence": "none",
-	"settings": {
-		"postrequestbody": "",
-		"authentication": "none",
-		"auth_password": "",
-		"typerequest": "HTTP_GET",
-		"urlrandom": "0",
-		"auth_userid": "",
-		"url": "http://64.131.109.21/Elias/users.json",
-		"dbdriver": ""
-	},
+	"_id": "53fc6944fdae3dcc94d4e303",
 	"appexpr": [],
-	"format": "json",
-	"dependency": "",
 	"category": "BPM",
-	"description": "",
-	"name": "GetUserTabs",
 	"connector": "http",
-	"requestDate": "2014-08-26T11:02:28.671Z",
-	"parameters": [],
+	"dependency": "",
+	"description": "",
+	"format": "json",
+	"lock": {
+		"status": "unlocked"
+	},
 	"metadata": {
 		"name": "root",
 		"type": "root",
@@ -100,24 +87,37 @@
 			}
 		]
 	},
-	"source": "ext",
-	"visibility": "visible",
-	"lock": {
-		"status": "unlocked"
-	},
-	"precode": [],
+	"name": "GetUserTabs",
+	"ownerId": "",
+	"parameters": [],
+	"persistence": "none",
 	"postcode": [
 		{
 			"name": "processing",
 			"code": "var resp = [];\nvar index = 1;\nvar users = response.users;\nresponse = users.forEach(function(item) {\n  odd = index % 2;\n  resp.push({\n   'label' :'User #'+item.id,\n   'disabled': false,\n   'open': (index>1 ? false : true),\n   'classes': (odd ? 'info-odd' : 'info-even'),\n   'link': 'http://abc.com/data/users/' + item.id + '/',\n   'content': {\n     'userName': item.firstName,\n     'userLastName': item.lastName,\n     'occupation': 'Professional occupation: ' + item.occupation,\n     'name': item.firstName + ' ' + item.lastName\n     }\n   });\n   index++;\n});\nresponse = resp;\nterminateFilter(response);"
 		}
 	],
-	"_id": "53fc6944fdae3dcc94d4e303",
+	"precode": [],
+	"requestDate": "2014-08-26T11:02:28.671Z",
+	"selector": ":root",
+	"settings": {
+		"postrequestbody": "",
+		"authentication": "none",
+		"auth_password": "",
+		"typerequest": "HTTP_GET",
+		"urlrandom": "0",
+		"auth_userid": "",
+		"url": "http://64.131.109.21/Elias/users.json",
+		"dbdriver": ""
+	},
+	"source": "ext",
+	"update_comment": "",
 	"versioning": {
 		"DfPlayWith": {
-			"last_action": "1413394508",
+			"last_action": "1413394526",
 			"status": "committed",
 			"user": "admin"
 		}
-	}
+	},
+	"visibility": "visible"
 }
