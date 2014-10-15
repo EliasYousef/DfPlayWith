@@ -1,0 +1,45 @@
+{
+	"selector": ":root",
+	"update_comment": "",
+	"ownerId": "",
+	"persistence": "none",
+	"settings": {
+		"postrequestbody": "",
+		"authentication": "none",
+		"auth_password": "",
+		"typerequest": "HTTP_GET",
+		"urlrandom": "0",
+		"auth_userid": "",
+		"url": "http://50.97.60.187:3000/database/Sample/Orders",
+		"dbdriver": "mongodb"
+	},
+	"appexpr": [],
+	"format": "json",
+	"dependency": "",
+	"category": "",
+	"description": "",
+	"name": "Elias",
+	"connector": "http",
+	"requestDate": "2014-09-15T14:44:20.576Z",
+	"parameters": [],
+	"metadata": {
+		"name": "root",
+		"type": "root",
+		"children": {}
+	},
+	"source": "db",
+	"visibility": "visible",
+	"lock": {
+		"status": "unlocked"
+	},
+	"precode": [],
+	"postcode": [],
+	"_id": "5416fb44d3a8c0e80875237a",
+	"versioning": {
+		"DfPlayWith": {
+			"last_action": "1413394508",
+			"status": "committed",
+			"user": "admin"
+		}
+	}
+}

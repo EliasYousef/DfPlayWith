@@ -1,0 +1,308 @@
+{
+	"selector": ":root",
+	"update_comment": "",
+	"ownerId": "",
+	"persistence": "none",
+	"settings": {
+		"postrequestbody": "",
+		"authentication": "Process+Server",
+		"auth_password": "",
+		"typerequest": "HTTP_PUT",
+		"urlrandom": "0",
+		"auth_userid": "",
+		"url": "http://dreamface1:9080/rest/bpm/wle/v1/task/{task_id}",
+		"dbdriver": ""
+	},
+	"appexpr": [],
+	"format": "json",
+	"dependency": "",
+	"category": "BPM",
+	"description": "Interview Approval",
+	"name": "qInterviewApproval",
+	"connector": "http",
+	"requestDate": "2014-07-02T15:17:44.502Z",
+	"parameters": [
+		{
+			"name": "task_id",
+			"type": "url",
+			"value": "9",
+			"operation": "eq"
+		},
+		{
+			"name": "action",
+			"type": "request",
+			"value": "finish",
+			"operation": "eq"
+		},
+		{
+			"name": "Technical",
+			"type": "request",
+			"value": "",
+			"operation": "eq"
+		},
+		{
+			"name": "Presentation",
+			"type": "request",
+			"value": "",
+			"operation": "eq"
+		},
+		{
+			"name": "AnalyticalThinking",
+			"type": "request",
+			"value": "",
+			"operation": "eq"
+		},
+		{
+			"name": "IsfitFortheJob",
+			"type": "request",
+			"value": "",
+			"operation": "eq"
+		}
+	],
+	"metadata": {
+		"name": "root",
+		"type": "root",
+		"children": {
+			"status": {
+				"name": "status",
+				"type": "String",
+				"options": {
+					"gcontrols": [
+						{
+							"name": "SimpleText",
+							"perspective": "Default",
+							"type": "TextField",
+							"attributes": {
+								"label": "status"
+							}
+						},
+						{
+							"name": "SimpleEdit",
+							"perspective": "Edit",
+							"type": "TextField",
+							"attributes": {
+								"label": "status"
+							}
+						}
+					]
+				}
+			},
+			"Data": {
+				"name": "Data",
+				"type": "Object",
+				"options": {
+					"gcontrols": [
+						{
+							"name": "SimpleText",
+							"perspective": "Default",
+							"type": "TextField",
+							"attributes": {
+								"label": "Data"
+							}
+						},
+						{
+							"name": "SimpleEdit",
+							"perspective": "Edit",
+							"type": "TextField",
+							"attributes": {
+								"label": "Data"
+							}
+						}
+					]
+				},
+				"children": {
+					"status": {
+						"name": "status",
+						"type": "String",
+						"options": {
+							"gcontrols": [
+								{
+									"name": "SimpleText",
+									"perspective": "Default",
+									"type": "TextField",
+									"attributes": {
+										"label": "status"
+									}
+								},
+								{
+									"name": "SimpleEdit",
+									"perspective": "Edit",
+									"type": "TextField",
+									"attributes": {
+										"label": "status"
+									}
+								}
+							]
+						}
+					},
+					"exceptionType": {
+						"name": "exceptionType",
+						"type": "String",
+						"options": {
+							"gcontrols": [
+								{
+									"name": "SimpleText",
+									"perspective": "Default",
+									"type": "TextField",
+									"attributes": {
+										"label": "exceptionType"
+									}
+								},
+								{
+									"name": "SimpleEdit",
+									"perspective": "Edit",
+									"type": "TextField",
+									"attributes": {
+										"label": "exceptionType"
+									}
+								}
+							]
+						}
+					},
+					"errorNumber": {
+						"name": "errorNumber",
+						"type": "String",
+						"options": {
+							"gcontrols": [
+								{
+									"name": "SimpleText",
+									"perspective": "Default",
+									"type": "TextField",
+									"attributes": {
+										"label": "errorNumber"
+									}
+								},
+								{
+									"name": "SimpleEdit",
+									"perspective": "Edit",
+									"type": "TextField",
+									"attributes": {
+										"label": "errorNumber"
+									}
+								}
+							]
+						}
+					},
+					"errorMessage": {
+						"name": "errorMessage",
+						"type": "String",
+						"options": {
+							"gcontrols": [
+								{
+									"name": "SimpleText",
+									"perspective": "Default",
+									"type": "TextField",
+									"attributes": {
+										"label": "errorMessage"
+									}
+								},
+								{
+									"name": "SimpleEdit",
+									"perspective": "Edit",
+									"type": "TextField",
+									"attributes": {
+										"label": "errorMessage"
+									}
+								}
+							]
+						}
+					},
+					"errorMessageParameters": {
+						"name": "errorMessageParameters",
+						"type": "Array",
+						"options": {
+							"gcontrols": [
+								{
+									"name": "SimpleText",
+									"perspective": "Default",
+									"type": "TextField",
+									"attributes": {
+										"label": "errorMessageParameters"
+									}
+								},
+								{
+									"name": "SimpleEdit",
+									"perspective": "Edit",
+									"type": "TextField",
+									"attributes": {
+										"label": "errorMessageParameters"
+									}
+								}
+							]
+						},
+						"children": [
+							{
+								"name": "0",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "0"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "0"
+											}
+										}
+									]
+								}
+							}
+						]
+					},
+					"responses": {
+						"name": "responses",
+						"type": "String",
+						"options": {
+							"gcontrols": [
+								{
+									"name": "SimpleText",
+									"perspective": "Default",
+									"type": "TextField",
+									"attributes": {
+										"label": "responses"
+									}
+								},
+								{
+									"name": "SimpleEdit",
+									"perspective": "Edit",
+									"type": "TextField",
+									"attributes": {
+										"label": "responses"
+									}
+								}
+							]
+						}
+					}
+				}
+			}
+		}
+	},
+	"source": "ext",
+	"visibility": "visible",
+	"lock": {
+		"status": "unlocked"
+	},
+	"precode": [
+		{
+			"name": "Add Params",
+			"code": "var new_params = [];\nnew_params.push({ \"name\": \"task_id\", \"value\": params[0].value, \"type\": \"url\" });\nnew_params.push({ \"name\": \"action\", \"value\": \"finish\", \"type\": \"request\" });\n\nvar params_obj = {};\nfor (var i=0; i<params.length; i++) {\n    params_obj[params[i].name] = params[i].value;\n}\n\n\nnew_params.push({ \"name\": \"params\",\n    \"value\": '{\"interviewResultss\":{\"Technical\":\"'+params_obj.Technical+'\",' +\n        '\"Presentation\":\"'+params_obj.Presentation+'\",' +\n        '\"AnalyticalThinking\":\"'+params_obj.AnalyticalThinking+'\",' +\n        '\"IsfitFortheJob\":\"'+params_obj.IsfitFortheJob+'\"}}',\n    \"type\": \"request\"\n});\n\nparams = new_params;\nterminateFilter();"
+		}
+	],
+	"postcode": [],
+	"_id": "53b42298390763d87d47b9e2",
+	"versioning": {
+		"DfPlayWith": {
+			"last_action": "1413394508",
+			"status": "committed",
+			"user": "admin"
+		}
+	}
+}

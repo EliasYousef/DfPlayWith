@@ -1,0 +1,290 @@
+{
+	"_id": "53b41e3c390763d87d47b9de",
+	"appexpr": [],
+	"category": "BPM",
+	"connector": "http",
+	"dependency": "",
+	"description": "Requisition approval decision",
+	"format": "json",
+	"lock": {
+		"status": "unlocked"
+	},
+	"metadata": {
+		"name": "root",
+		"type": "root",
+		"children": {
+			"status": {
+				"name": "status",
+				"type": "String",
+				"options": {
+					"gcontrols": [
+						{
+							"name": "SimpleText",
+							"perspective": "Default",
+							"type": "TextField",
+							"attributes": {
+								"label": "status"
+							}
+						},
+						{
+							"name": "SimpleEdit",
+							"perspective": "Edit",
+							"type": "TextField",
+							"attributes": {
+								"label": "status"
+							}
+						}
+					]
+				}
+			},
+			"Data": {
+				"name": "Data",
+				"type": "Object",
+				"options": {
+					"gcontrols": [
+						{
+							"name": "SimpleText",
+							"perspective": "Default",
+							"type": "TextField",
+							"attributes": {
+								"label": "Data"
+							}
+						},
+						{
+							"name": "SimpleEdit",
+							"perspective": "Edit",
+							"type": "TextField",
+							"attributes": {
+								"label": "Data"
+							}
+						}
+					]
+				},
+				"children": {
+					"status": {
+						"name": "status",
+						"type": "String",
+						"options": {
+							"gcontrols": [
+								{
+									"name": "SimpleText",
+									"perspective": "Default",
+									"type": "TextField",
+									"attributes": {
+										"label": "status"
+									}
+								},
+								{
+									"name": "SimpleEdit",
+									"perspective": "Edit",
+									"type": "TextField",
+									"attributes": {
+										"label": "status"
+									}
+								}
+							]
+						}
+					},
+					"exceptionType": {
+						"name": "exceptionType",
+						"type": "String",
+						"options": {
+							"gcontrols": [
+								{
+									"name": "SimpleText",
+									"perspective": "Default",
+									"type": "TextField",
+									"attributes": {
+										"label": "exceptionType"
+									}
+								},
+								{
+									"name": "SimpleEdit",
+									"perspective": "Edit",
+									"type": "TextField",
+									"attributes": {
+										"label": "exceptionType"
+									}
+								}
+							]
+						}
+					},
+					"errorNumber": {
+						"name": "errorNumber",
+						"type": "String",
+						"options": {
+							"gcontrols": [
+								{
+									"name": "SimpleText",
+									"perspective": "Default",
+									"type": "TextField",
+									"attributes": {
+										"label": "errorNumber"
+									}
+								},
+								{
+									"name": "SimpleEdit",
+									"perspective": "Edit",
+									"type": "TextField",
+									"attributes": {
+										"label": "errorNumber"
+									}
+								}
+							]
+						}
+					},
+					"errorMessage": {
+						"name": "errorMessage",
+						"type": "String",
+						"options": {
+							"gcontrols": [
+								{
+									"name": "SimpleText",
+									"perspective": "Default",
+									"type": "TextField",
+									"attributes": {
+										"label": "errorMessage"
+									}
+								},
+								{
+									"name": "SimpleEdit",
+									"perspective": "Edit",
+									"type": "TextField",
+									"attributes": {
+										"label": "errorMessage"
+									}
+								}
+							]
+						}
+					},
+					"errorMessageParameters": {
+						"name": "errorMessageParameters",
+						"type": "Array",
+						"options": {
+							"gcontrols": [
+								{
+									"name": "SimpleText",
+									"perspective": "Default",
+									"type": "TextField",
+									"attributes": {
+										"label": "errorMessageParameters"
+									}
+								},
+								{
+									"name": "SimpleEdit",
+									"perspective": "Edit",
+									"type": "TextField",
+									"attributes": {
+										"label": "errorMessageParameters"
+									}
+								}
+							]
+						},
+						"children": [
+							{
+								"name": "0",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "0"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "0"
+											}
+										}
+									]
+								}
+							}
+						]
+					},
+					"responses": {
+						"name": "responses",
+						"type": "String",
+						"options": {
+							"gcontrols": [
+								{
+									"name": "SimpleText",
+									"perspective": "Default",
+									"type": "TextField",
+									"attributes": {
+										"label": "responses"
+									}
+								},
+								{
+									"name": "SimpleEdit",
+									"perspective": "Edit",
+									"type": "TextField",
+									"attributes": {
+										"label": "responses"
+									}
+								}
+							]
+						}
+					}
+				}
+			}
+		}
+	},
+	"name": "qGmRequisitionApproval",
+	"ownerId": "",
+	"parameters": [
+		{
+			"name": "task_id",
+			"type": "url",
+			"value": "5",
+			"operation": "eq"
+		},
+		{
+			"name": "action",
+			"type": "request",
+			"value": "finish",
+			"operation": "eq"
+		},
+		{
+			"name": "decision ",
+			"type": "request",
+			"value": "Approved",
+			"operation": "eq"
+		}
+	],
+	"persistence": "none",
+	"postcode": [],
+	"precode": [
+		{
+			"name": "Add params",
+			"code": "params.push({ \"name\": \"params\", \"value\": '{\"gmApproval\":\"' + params[2].value + '\"}' });"
+		}
+	],
+	"requestDate": "2014-07-02T15:10:14.389Z",
+	"selector": ":root",
+	"settings": {
+		"postrequestbody": "",
+		"authentication": "Process+Server",
+		"auth_password": "",
+		"typerequest": "HTTP_PUT",
+		"urlrandom": "0",
+		"auth_userid": "",
+		"url": "http://dreamface1:9080/rest/bpm/wle/v1/task/{task_id}",
+		"dbdriver": ""
+	},
+	"source": "ext",
+	"update_comment": "",
+	"visibility": "visible",
+	"versioning": {
+		"DfPlayWith": {
+			"last_action": "1413394508",
+			"status": "committed",
+			"user": "admin"
+		}
+	}
+}

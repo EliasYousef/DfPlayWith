@@ -1,0 +1,183 @@
+{
+	"selector": ":root",
+	"update_comment": "",
+	"ownerId": "",
+	"persistence": "none",
+	"settings": {
+		"postrequestbody": "",
+		"authentication": "none",
+		"auth_password": "",
+		"typerequest": "HTTP_GET",
+		"urlrandom": "0",
+		"auth_userid": "",
+		"url": "http://50.97.60.187:3000/database/get/Sample/Customers",
+		"dbdriver": "mongodb"
+	},
+	"appexpr": [],
+	"format": "json",
+	"dependency": "",
+	"category": "",
+	"description": "",
+	"name": "qGetCustomers",
+	"connector": "http",
+	"requestDate": "2014-09-11T11:07:20.168Z",
+	"parameters": [],
+	"metadata": {
+		"name": "root",
+		"type": "root",
+		"children": {
+			"data": {
+				"name": "data",
+				"type": "Array",
+				"options": {
+					"gcontrols": [
+						{
+							"[name]": "SimpleText",
+							"[perspective]": "Default",
+							"[type]": "TextField",
+							"[attributes][label]": "data"
+						},
+						{
+							"[name]": "SimpleEdit",
+							"[perspective]": "Edit",
+							"[type]": "TextField",
+							"[attributes][label]": "data"
+						}
+					]
+				},
+				"children": {
+					"CustomerID": {
+						"name": "CustomerID",
+						"type": "String",
+						"options": {
+							"[gcontrols][0][name]": "SimpleText",
+							"[gcontrols][0][perspective]": "Default",
+							"[gcontrols][0][type]": "TextField",
+							"[gcontrols][0][attributes][label]": "CustomerID",
+							"[gcontrols][1][name]": "SimpleEdit",
+							"[gcontrols][1][perspective]": "Edit",
+							"[gcontrols][1][type]": "TextField",
+							"[gcontrols][1][attributes][label]": "CustomerID"
+						}
+					},
+					"CustomerName": {
+						"name": "CustomerName",
+						"type": "String",
+						"options": {
+							"[gcontrols][0][name]": "SimpleText",
+							"[gcontrols][0][perspective]": "Default",
+							"[gcontrols][0][type]": "TextField",
+							"[gcontrols][0][attributes][label]": "CustomerName",
+							"[gcontrols][1][name]": "SimpleEdit",
+							"[gcontrols][1][perspective]": "Edit",
+							"[gcontrols][1][type]": "TextField",
+							"[gcontrols][1][attributes][label]": "CustomerName"
+						}
+					},
+					"ContactName": {
+						"name": "ContactName",
+						"type": "String",
+						"options": {
+							"[gcontrols][0][name]": "SimpleText",
+							"[gcontrols][0][perspective]": "Default",
+							"[gcontrols][0][type]": "TextField",
+							"[gcontrols][0][attributes][label]": "ContactName",
+							"[gcontrols][1][name]": "SimpleEdit",
+							"[gcontrols][1][perspective]": "Edit",
+							"[gcontrols][1][type]": "TextField",
+							"[gcontrols][1][attributes][label]": "ContactName"
+						}
+					},
+					"Address": {
+						"name": "Address",
+						"type": "String",
+						"options": {
+							"[gcontrols][0][name]": "SimpleText",
+							"[gcontrols][0][perspective]": "Default",
+							"[gcontrols][0][type]": "TextField",
+							"[gcontrols][0][attributes][label]": "Address",
+							"[gcontrols][1][name]": "SimpleEdit",
+							"[gcontrols][1][perspective]": "Edit",
+							"[gcontrols][1][type]": "TextField",
+							"[gcontrols][1][attributes][label]": "Address"
+						}
+					},
+					"City": {
+						"name": "City",
+						"type": "String",
+						"options": {
+							"[gcontrols][0][name]": "SimpleText",
+							"[gcontrols][0][perspective]": "Default",
+							"[gcontrols][0][type]": "TextField",
+							"[gcontrols][0][attributes][label]": "City",
+							"[gcontrols][1][name]": "SimpleEdit",
+							"[gcontrols][1][perspective]": "Edit",
+							"[gcontrols][1][type]": "TextField",
+							"[gcontrols][1][attributes][label]": "City"
+						}
+					},
+					"PostalCode": {
+						"name": "PostalCode",
+						"type": "String",
+						"options": {
+							"[gcontrols][0][name]": "SimpleText",
+							"[gcontrols][0][perspective]": "Default",
+							"[gcontrols][0][type]": "TextField",
+							"[gcontrols][0][attributes][label]": "PostalCode",
+							"[gcontrols][1][name]": "SimpleEdit",
+							"[gcontrols][1][perspective]": "Edit",
+							"[gcontrols][1][type]": "TextField",
+							"[gcontrols][1][attributes][label]": "PostalCode"
+						}
+					},
+					"Country": {
+						"name": "Country",
+						"type": "String",
+						"options": {
+							"[gcontrols][0][name]": "SimpleText",
+							"[gcontrols][0][perspective]": "Default",
+							"[gcontrols][0][type]": "TextField",
+							"[gcontrols][0][attributes][label]": "Country",
+							"[gcontrols][1][name]": "SimpleEdit",
+							"[gcontrols][1][perspective]": "Edit",
+							"[gcontrols][1][type]": "TextField",
+							"[gcontrols][1][attributes][label]": "Country"
+						}
+					},
+					"_id": {
+						"name": "_id",
+						"type": "String",
+						"options": {
+							"[gcontrols][0][name]": "SimpleText",
+							"[gcontrols][0][perspective]": "Default",
+							"[gcontrols][0][type]": "TextField",
+							"[gcontrols][0][attributes][label]": "_id",
+							"[gcontrols][1][name]": "SimpleEdit",
+							"[gcontrols][1][perspective]": "Edit",
+							"[gcontrols][1][type]": "TextField",
+							"[gcontrols][1][attributes][label]": "_id"
+						}
+					}
+				}
+			}
+		}
+	},
+	"source": "db",
+	"visibility": "visible",
+	"lock": {
+		"status": "unlocked"
+	},
+	"precode": [],
+	"postcode": [],
+	"versioning": {
+		"DfPlayWith": {
+			"last_action": "1413394508",
+			"status": "committed",
+			"user": "admin"
+		},
+		"last_action": "1410433640",
+		"status": "added",
+		"user": "admin"
+	},
+	"_id": "54118268b3e84350151c3088"
+}

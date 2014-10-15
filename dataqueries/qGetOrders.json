@@ -1,0 +1,94 @@
+{
+	"_id": "541183f0b3e84350151c308c",
+	"appexpr": [],
+	"category": "",
+	"connector": "http",
+	"dependency": "",
+	"description": "",
+	"format": "json",
+	"lock": {
+		"status": "unlocked"
+	},
+	"metadata": {
+		"name": "root",
+		"type": "root",
+		"children": [
+			{
+				"name": "0",
+				"type": "String",
+				"options": {
+					"gcontrols": [
+						{
+							"[name]": "SimpleText",
+							"[perspective]": "Default",
+							"[type]": "TextField",
+							"[attributes][label]": "0"
+						},
+						{
+							"[name]": "SimpleEdit",
+							"[perspective]": "Edit",
+							"[type]": "TextField",
+							"[attributes][label]": "0"
+						}
+					]
+				}
+			},
+			{
+				"name": "1",
+				"type": "String",
+				"options": {
+					"gcontrols": [
+						{
+							"[name]": "SimpleText",
+							"[perspective]": "Default",
+							"[type]": "TextField",
+							"[attributes][label]": "1"
+						},
+						{
+							"[name]": "SimpleEdit",
+							"[perspective]": "Edit",
+							"[type]": "TextField",
+							"[attributes][label]": "1"
+						}
+					]
+				}
+			}
+		]
+	},
+	"name": "qGetOrders",
+	"ownerId": "",
+	"parameters": [],
+	"persistence": "none",
+	"postcode": [
+		{
+			"name": "Code",
+			"code": "var resp = [];\nvar index = 1;\nvar users = response.data;\nresponse = users.forEach(function(item) {\n  odd = index % 2;\n  resp.push({\n   'label' :'Customer #'+item.CustomerID,\n   'disabled': false,\n   'content': {\n     'OrderID': item.OrderID,\n     'CustomerID': item.CustomerID,\n     'EmployeeID': item.EmployeeID,\n     'OrderDate': item.OrderDate,\n     'ShipperID': item.ShipperID\n\n     }\n   });\n   index++;\n});\nresponse = resp;\nterminateFilter(response);"
+		}
+	],
+	"precode": [],
+	"requestDate": "2014-09-11T16:58:43.504Z",
+	"selector": ":root",
+	"settings": {
+		"postrequestbody": "",
+		"authentication": "none",
+		"auth_password": "",
+		"typerequest": "HTTP_GET",
+		"urlrandom": "0",
+		"auth_userid": "",
+		"url": "http://50.97.60.187:3000/database/get/Sample/Orders",
+		"dbdriver": "mongodb"
+	},
+	"source": "db",
+	"update_comment": "",
+	"versioning": {
+		"DfPlayWith": {
+			"last_action": "1413394508",
+			"status": "committed",
+			"user": "admin"
+		},
+		"last_action": "1410454724",
+		"status": "modified",
+		"user": "admin"
+	},
+	"visibility": "visible"
+}

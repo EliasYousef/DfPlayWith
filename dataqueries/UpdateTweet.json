@@ -1,0 +1,47 @@
+{
+	"selector": ":root",
+	"update_comment": "",
+	"ownerId": "",
+	"persistence": "none",
+	"settings": {
+		"postrequestbody": {
+			"status": "Tweeting"
+		},
+		"authentication": "Twitter",
+		"auth_password": "",
+		"typerequest": "HTTP_POST",
+		"urlrandom": "0",
+		"auth_userid": "",
+		"url": "https://api.twitter.com/1.1/statuses/update.json",
+		"dbdriver": ""
+	},
+	"appexpr": [],
+	"format": "json",
+	"dependency": "",
+	"category": "BPM",
+	"description": "Update Tweets",
+	"name": "UpdateTweet",
+	"connector": "http",
+	"requestDate": "2014-08-25T18:25:24.912Z",
+	"parameters": [],
+	"metadata": {
+		"name": "root",
+		"type": "root",
+		"children": {}
+	},
+	"source": "ext",
+	"visibility": "visible",
+	"lock": {
+		"status": "unlocked"
+	},
+	"precode": [],
+	"postcode": [],
+	"_id": "53fb7f943771c10889f45ad8",
+	"versioning": {
+		"DfPlayWith": {
+			"last_action": "1413394508",
+			"status": "committed",
+			"user": "admin"
+		}
+	}
+}

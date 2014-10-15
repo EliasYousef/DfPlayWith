@@ -1,0 +1,1099 @@
+{
+	"_id": "53b416c4390763d87d47b9d9",
+	"appexpr": [],
+	"category": "BPM",
+	"connector": "http",
+	"dependency": "",
+	"description": "Inbox task list",
+	"format": "json",
+	"lock": {
+		"status": "unlocked"
+	},
+	"metadata": {
+		"name": "root",
+		"type": "root",
+		"children": {
+			"status": {
+				"name": "status",
+				"type": "String",
+				"options": {
+					"gcontrols": [
+						{
+							"name": "SimpleText",
+							"perspective": "Default",
+							"type": "TextField",
+							"attributes": {
+								"label": "status"
+							}
+						},
+						{
+							"name": "SimpleEdit",
+							"perspective": "Edit",
+							"type": "TextField",
+							"attributes": {
+								"label": "status"
+							}
+						}
+					]
+				}
+			},
+			"data": {
+				"name": "data",
+				"type": "Object",
+				"options": {
+					"gcontrols": [
+						{
+							"name": "SimpleText",
+							"perspective": "Default",
+							"type": "TextField",
+							"attributes": {
+								"label": "data"
+							}
+						},
+						{
+							"name": "SimpleEdit",
+							"perspective": "Edit",
+							"type": "TextField",
+							"attributes": {
+								"label": "data"
+							}
+						}
+					]
+				},
+				"children": {
+					"data": {
+						"name": "data",
+						"type": "Array",
+						"options": {
+							"gcontrols": [
+								{
+									"name": "SimpleText",
+									"perspective": "Default",
+									"type": "TextField",
+									"attributes": {
+										"label": "data"
+									}
+								},
+								{
+									"name": "SimpleEdit",
+									"perspective": "Edit",
+									"type": "TextField",
+									"attributes": {
+										"label": "data"
+									}
+								}
+							]
+						},
+						"children": {
+							"taskAssignedTo": {
+								"name": "taskAssignedTo",
+								"type": "Object",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "taskAssignedTo"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "taskAssignedTo"
+											}
+										}
+									]
+								},
+								"children": {
+									"type": {
+										"name": "type",
+										"type": "String",
+										"options": {
+											"gcontrols": [
+												{
+													"name": "SimpleText",
+													"perspective": "Default",
+													"type": "TextField",
+													"attributes": {
+														"label": "type"
+													}
+												},
+												{
+													"name": "SimpleEdit",
+													"perspective": "Edit",
+													"type": "TextField",
+													"attributes": {
+														"label": "type"
+													}
+												}
+											]
+										}
+									},
+									"who": {
+										"name": "who",
+										"type": "String",
+										"options": {
+											"gcontrols": [
+												{
+													"name": "SimpleText",
+													"perspective": "Default",
+													"type": "TextField",
+													"attributes": {
+														"label": "who"
+													}
+												},
+												{
+													"name": "SimpleEdit",
+													"perspective": "Edit",
+													"type": "TextField",
+													"attributes": {
+														"label": "who"
+													}
+												}
+											]
+										}
+									}
+								}
+							},
+							"assignedToUser": {
+								"name": "assignedToUser",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "assignedToUser"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "assignedToUser"
+											}
+										}
+									]
+								}
+							},
+							"bpdName": {
+								"name": "bpdName",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "bpdName"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "bpdName"
+											}
+										}
+									]
+								}
+							},
+							"instanceCreateDate": {
+								"name": "instanceCreateDate",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "instanceCreateDate"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "instanceCreateDate"
+											}
+										}
+									]
+								}
+							},
+							"instanceDueDate": {
+								"name": "instanceDueDate",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "instanceDueDate"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "instanceDueDate"
+											}
+										}
+									]
+								}
+							},
+							"instanceId": {
+								"name": "instanceId",
+								"type": "Number",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "instanceId"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "instanceId"
+											}
+										}
+									]
+								}
+							},
+							"instanceModifyDate": {
+								"name": "instanceModifyDate",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "instanceModifyDate"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "instanceModifyDate"
+											}
+										}
+									]
+								}
+							},
+							"instanceName": {
+								"name": "instanceName",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "instanceName"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "instanceName"
+											}
+										}
+									]
+								}
+							},
+							"instanceStatus": {
+								"name": "instanceStatus",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "instanceStatus"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "instanceStatus"
+											}
+										}
+									]
+								}
+							},
+							"taskAttachedExtActivityRef": {
+								"name": "taskAttachedExtActivityRef",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "taskAttachedExtActivityRef"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "taskAttachedExtActivityRef"
+											}
+										}
+									]
+								}
+							},
+							"taskAttachedInfoPathFormRef": {
+								"name": "taskAttachedInfoPathFormRef",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "taskAttachedInfoPathFormRef"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "taskAttachedInfoPathFormRef"
+											}
+										}
+									]
+								}
+							},
+							"taskDueDate": {
+								"name": "taskDueDate",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "taskDueDate"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "taskDueDate"
+											}
+										}
+									]
+								}
+							},
+							"taskId": {
+								"name": "taskId",
+								"type": "Number",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "taskId"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "taskId"
+											}
+										}
+									]
+								}
+							},
+							"taskPriority": {
+								"name": "taskPriority",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "taskPriority"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "taskPriority"
+											}
+										}
+									]
+								}
+							},
+							"taskStatus": {
+								"name": "taskStatus",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "taskStatus"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "taskStatus"
+											}
+										}
+									]
+								}
+							},
+							"taskSubject": {
+								"name": "taskSubject",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "taskSubject"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "taskSubject"
+											}
+										}
+									]
+								}
+							}
+						}
+					},
+					"firstColumnSort": {
+						"name": "firstColumnSort",
+						"type": "String",
+						"options": {
+							"gcontrols": [
+								{
+									"name": "SimpleText",
+									"perspective": "Default",
+									"type": "TextField",
+									"attributes": {
+										"label": "firstColumnSort"
+									}
+								},
+								{
+									"name": "SimpleEdit",
+									"perspective": "Edit",
+									"type": "TextField",
+									"attributes": {
+										"label": "firstColumnSort"
+									}
+								}
+							]
+						}
+					},
+					"secondColumnSort": {
+						"name": "secondColumnSort",
+						"type": "String",
+						"options": {
+							"gcontrols": [
+								{
+									"name": "SimpleText",
+									"perspective": "Default",
+									"type": "TextField",
+									"attributes": {
+										"label": "secondColumnSort"
+									}
+								},
+								{
+									"name": "SimpleEdit",
+									"perspective": "Edit",
+									"type": "TextField",
+									"attributes": {
+										"label": "secondColumnSort"
+									}
+								}
+							]
+						}
+					},
+					"organization": {
+						"name": "organization",
+						"type": "String",
+						"options": {
+							"gcontrols": [
+								{
+									"name": "SimpleText",
+									"perspective": "Default",
+									"type": "TextField",
+									"attributes": {
+										"label": "organization"
+									}
+								},
+								{
+									"name": "SimpleEdit",
+									"perspective": "Edit",
+									"type": "TextField",
+									"attributes": {
+										"label": "organization"
+									}
+								}
+							]
+						}
+					},
+					"autoColumns": {
+						"name": "autoColumns",
+						"type": "Array",
+						"options": {
+							"gcontrols": [
+								{
+									"name": "SimpleText",
+									"perspective": "Default",
+									"type": "TextField",
+									"attributes": {
+										"label": "autoColumns"
+									}
+								},
+								{
+									"name": "SimpleEdit",
+									"perspective": "Edit",
+									"type": "TextField",
+									"attributes": {
+										"label": "autoColumns"
+									}
+								}
+							]
+						},
+						"children": [
+							{
+								"name": "0",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "0"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "0"
+											}
+										}
+									]
+								}
+							},
+							{
+								"name": "1",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "1"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "1"
+											}
+										}
+									]
+								}
+							},
+							{
+								"name": "2",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "2"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "2"
+											}
+										}
+									]
+								}
+							},
+							{
+								"name": "3",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "3"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "3"
+											}
+										}
+									]
+								}
+							},
+							{
+								"name": "4",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "4"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "4"
+											}
+										}
+									]
+								}
+							},
+							{
+								"name": "5",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "5"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "5"
+											}
+										}
+									]
+								}
+							},
+							{
+								"name": "6",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "6"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "6"
+											}
+										}
+									]
+								}
+							},
+							{
+								"name": "7",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "7"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "7"
+											}
+										}
+									]
+								}
+							},
+							{
+								"name": "8",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "8"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "8"
+											}
+										}
+									]
+								}
+							},
+							{
+								"name": "9",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "9"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "9"
+											}
+										}
+									]
+								}
+							},
+							{
+								"name": "10",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "10"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "10"
+											}
+										}
+									]
+								}
+							},
+							{
+								"name": "11",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "11"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "11"
+											}
+										}
+									]
+								}
+							},
+							{
+								"name": "12",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "12"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "12"
+											}
+										}
+									]
+								}
+							},
+							{
+								"name": "13",
+								"type": "String",
+								"options": {
+									"gcontrols": [
+										{
+											"name": "SimpleText",
+											"perspective": "Default",
+											"type": "TextField",
+											"attributes": {
+												"label": "13"
+											}
+										},
+										{
+											"name": "SimpleEdit",
+											"perspective": "Edit",
+											"type": "TextField",
+											"attributes": {
+												"label": "13"
+											}
+										}
+									]
+								}
+							}
+						]
+					},
+					"offset": {
+						"name": "offset",
+						"type": "Number",
+						"options": {
+							"gcontrols": [
+								{
+									"name": "SimpleText",
+									"perspective": "Default",
+									"type": "TextField",
+									"attributes": {
+										"label": "offset"
+									}
+								},
+								{
+									"name": "SimpleEdit",
+									"perspective": "Edit",
+									"type": "TextField",
+									"attributes": {
+										"label": "offset"
+									}
+								}
+							]
+						}
+					},
+					"size": {
+						"name": "size",
+						"type": "Number",
+						"options": {
+							"gcontrols": [
+								{
+									"name": "SimpleText",
+									"perspective": "Default",
+									"type": "TextField",
+									"attributes": {
+										"label": "size"
+									}
+								},
+								{
+									"name": "SimpleEdit",
+									"perspective": "Edit",
+									"type": "TextField",
+									"attributes": {
+										"label": "size"
+									}
+								}
+							]
+						}
+					},
+					"requestedSize": {
+						"name": "requestedSize",
+						"type": "Number",
+						"options": {
+							"gcontrols": [
+								{
+									"name": "SimpleText",
+									"perspective": "Default",
+									"type": "TextField",
+									"attributes": {
+										"label": "requestedSize"
+									}
+								},
+								{
+									"name": "SimpleEdit",
+									"perspective": "Edit",
+									"type": "TextField",
+									"attributes": {
+										"label": "requestedSize"
+									}
+								}
+							]
+						}
+					},
+					"totalCount": {
+						"name": "totalCount",
+						"type": "Number",
+						"options": {
+							"gcontrols": [
+								{
+									"name": "SimpleText",
+									"perspective": "Default",
+									"type": "TextField",
+									"attributes": {
+										"label": "totalCount"
+									}
+								},
+								{
+									"name": "SimpleEdit",
+									"perspective": "Edit",
+									"type": "TextField",
+									"attributes": {
+										"label": "totalCount"
+									}
+								}
+							]
+						}
+					}
+				}
+			}
+		}
+	},
+	"name": "qGetTasks",
+	"ownerId": "",
+	"parameters": [
+		{
+			"name": "organization",
+			"type": "request",
+			"value": "byTask",
+			"operation": "eq"
+		},
+		{
+			"name": "condition",
+			"type": "request",
+			"value": "taskStatus|New_or_Received",
+			"operation": "eq"
+		}
+	],
+	"persistence": "none",
+	"postcode": [],
+	"precode": [],
+	"requestDate": "2014-07-02T14:53:53.895Z",
+	"selector": ":root",
+	"settings": {
+		"postrequestbody": "",
+		"authentication": "Process+Server",
+		"auth_password": "",
+		"typerequest": "HTTP_POST",
+		"urlrandom": "0",
+		"auth_userid": "",
+		"url": "http://50.97.60.187:9080/rest/bpm/wle/v1/search/query",
+		"dbdriver": ""
+	},
+	"source": "ext",
+	"update_comment": "",
+	"visibility": "visible",
+	"versioning": {
+		"DfPlayWith": {
+			"last_action": "1413394508",
+			"status": "committed",
+			"user": "admin"
+		}
+	}
+}
